@@ -26,12 +26,21 @@
     "validate.io",
     "validate",
     "validation",
-    "validator"
+    "validator",
+    "valid",
+    "square",
+    "matrix",
+    "is",
+    "issquare",
+    "squarematrix",
+    "issquarematrix"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/square-matrix/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "validate.io-array-array": "^1.0.0"
+  },
   "devDependencies": {
     "chai": "1.x.x",
     "mocha": "1.x.x",

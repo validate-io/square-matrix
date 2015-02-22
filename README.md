@@ -1,4 +1,4 @@
-square-matrix
+Square Matrix
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -17,18 +17,45 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'validate.io-square-matrix' );
+var isSquareMatrix = require( 'validate.io-square-matrix' );
 ```
 
-#### foo( value )
+#### isSquareMatrix( value )
 
-What does this function do?
+Validates if a value is an `array` of `arrays` and has equal dimensions.
+
+``` javascript
+var value = [[1,2],[1,2]];
+
+var bool = isSquareMatrix( value );
+// returns true
+```
+
+__Note__: the method first validates that the input `value` is an `array` of `arrays`. For any other input, the method returns `false`.
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'validate.io-square-matrix' );
+var isSquareMatrix = require( 'validate.io-square-matrix' );
+
+console.log( isSquareMatrix( [[1,2],[1,2]] ) );
+// returns true
+
+console.log( isSquareMatrix( [] ) );
+// returns false
+
+console.log( isSquareMatrix( [[]] ) );
+// returns false
+
+console.log( isSquareMatrix( [[1,2]] ) );
+// returns false
+
+console.log( isSquareMatrix( [[1,2],[1]] ) );
+// returns false
+
+console.log( isSquareMatrix( [[1],[2]] ) );
+// returns false
 ```
 
 To run the example code from the top-level application directory,
