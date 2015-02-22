@@ -31,7 +31,7 @@ var bool = isSquareMatrix( value );
 // returns true
 ```
 
-__Note__: the method first validates that the input `value` is an `array` of `arrays`. For any other input, the method returns `false`.
+__Note__: the method first validates that an input `value` is an `array` of `arrays`. For any other input, the method returns `false`.
 
 
 ## Examples
